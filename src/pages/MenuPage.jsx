@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; 
 import axios from "axios";
 import { useCartStore } from "../store/cartStore";
 import { FiPlus } from "react-icons/fi";
@@ -61,11 +62,13 @@ const MenuPage = () => {
           {menuItems.map((item) => (
             <div
               key={item._id}
-              // flex-col and h-full keeps cards equal height
               className="group flex flex-col h-full bg-white rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden"
             >
-              {/* Image Section (Tag removed from here) */}
-              <div className="relative h-56 overflow-hidden bg-gray-100">
+              {/* Image Section - Wrapped in Link to Product Page */}
+              <Link
+                to={`/product/${item._id}`}
+                className="relative h-56 overflow-hidden bg-gray-100 block"
+              >
                 <img
                   src={
                     item.image
@@ -75,14 +78,17 @@ const MenuPage = () => {
                   alt={item.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-              </div>
+              </Link>
 
               {/* Content Section */}
               <div className="p-6 flex-1 flex flex-col">
                 <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">
-                    {item.name}
-                  </h3>
+                  {/* Item Name - Also wrapped in a Link for better UX */}
+                  <Link to={`/product/${item._id}`}>
+                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">
+                      {item.name}
+                    </h3>
+                  </Link>
                   <span className="text-xl font-black text-gray-900">
                     ${item.price.toFixed(2)}
                   </span>
