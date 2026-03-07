@@ -1,16 +1,28 @@
-# React + Vite
+# 🍔 Tasty-Bites Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tasty-Bites is a modern, responsive food ordering application built with **React** and **Vite**. It provides a seamless user experience from browsing the menu to final checkout.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+**Vercel URL:** [Insert Your Vercel Link Here]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- **Dynamic Menu Grid**: Responsive display of food items with real-time stock availability.
+- **Interactive Cart**: Managed via **Zustand**, allowing users to add/remove items and adjust quantities.
+- **Secure Checkout**: Integrated payment method selection (PayPal/Stripe) and dynamic price calculation including 15% tax and shipping fees.
+- **Admin Dashboard**: A comprehensive management suite with real-time statistics and order status tracking.
+- **Order Success Tracking**: Polished confirmation screens with estimated preparation times.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Framework**: React.js (Vite)
+- **Styling**: Tailwind CSS & DaisyUI
+- **State Management**: Zustand
+- **Icons**: React Icons (Fi, Md)
+- **Deployment**: Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Installation & Setup
+1. Clone the repository.
+2. Navigate to the `frontend` folder.
+3. Install dependencies: `npm install`
+4. Create a `.env` file and add your backend URL:
+   `VITE_API_URL=https://food-backend-sutz.onrender.com`
+5. Start development server: `npm run dev`
