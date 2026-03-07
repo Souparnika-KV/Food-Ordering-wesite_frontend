@@ -3,7 +3,7 @@
 Tasty-Bites is a modern, responsive food ordering application built with **React** and **Vite**. It provides a seamless user experience from browsing the menu to final checkout.
 
 ## 🚀 Live Demo
-**Vercel URL:** [Insert Your Vercel Link Here]
+**Vercel URL:** [https://food-frontend-tawny.vercel.app/]
 
 ## ✨ Features
 - **Dynamic Menu Grid**: Responsive display of food items with real-time stock availability.
@@ -24,5 +24,5 @@ Tasty-Bites is a modern, responsive food ordering application built with **React
 2. Navigate to the `frontend` folder.
 3. Install dependencies: `npm install`
 4. Create a `.env` file and add your backend URL:
-   `VITE_API_URL=https://food-backend-sutz.onrender.com`
+   `VITE_API_URL=https://food-backend-sutz.onrender.com/`
 5. Start development server: `npm run dev`
