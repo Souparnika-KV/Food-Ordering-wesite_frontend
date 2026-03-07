@@ -2,9 +2,6 @@
 
 Tasty-Bites is a modern, responsive food ordering application built with **React** and **Vite**. It provides a seamless user experience from browsing the menu to final checkout.
 
-## 🚀 Live Demo
-**Vercel URL:** [https://food-frontend-tawny.vercel.app/]
-
 ## ✨ Features
 - **Dynamic Menu Grid**: Responsive display of food items with real-time stock availability.
 - **Interactive Cart**: Managed via **Zustand**, allowing users to add/remove items and adjust quantities.
