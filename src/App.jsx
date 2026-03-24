@@ -11,7 +11,10 @@ import OrderSuccessPage from "./pages/OrderSuccessPage";
 import ProfilePage from "./pages/ProfilePage";
 import AdminDashboard from "./pages/AdminDashboard";
 import MenuManagementPage from "./pages/MenuManagementPage";
-import ProductPage from "./pages/ProductPage"; 
+import ProductPage from "./pages/ProductPage"; // 🍱 New: Product Details
+// Page
+
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -51,6 +54,7 @@ function App() {
           components/Footer.jsx is actually created to avoid 
           Vite build errors.
       */}
+      <Footer />
     </BrowserRouter>
   );
 }
