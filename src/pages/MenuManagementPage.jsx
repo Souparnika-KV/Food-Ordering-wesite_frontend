@@ -116,10 +116,19 @@ const MenuManagementPage = () => {
                 className="hover:bg-slate-50/50 transition-colors"
               >
                 <td className="px-8 py-4">
+                  {/* 🎯 FIXED IMAGE SOURCE HERE */}
                   <img
-                    src={`http://localhost:5000${item.image}`}
+                    src={
+                      item.image
+                        ? `${BASE_URL}${item.image}`
+                        : "https://via.placeholder.com/150?text=No+Image"
+                    }
                     alt={item.name}
                     className="w-16 h-16 object-cover rounded-xl border-2 border-slate-100 shadow-sm"
+                    onError={(e) => {
+                      e.target.src =
+                        "https://via.placeholder.com/150?text=Error";
+                    }}
                   />
                 </td>
                 <td className="px-8 py-4 font-bold text-slate-900">
